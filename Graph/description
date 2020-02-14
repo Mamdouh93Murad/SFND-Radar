@@ -1,0 +1,10 @@
+# Graphs to visualize results
+
+* FFT 
+Shows the results of applying FFT on the Range Dimension of Beat Signals
+
+* FFT2 
+results of applying FFT on both Dimensions of the Beat Signals ( Range and Doppler )
+
+**CA-CFAR 
+Results of applying CFAR technique on the Range Doppler Map to avoid False Alarms.

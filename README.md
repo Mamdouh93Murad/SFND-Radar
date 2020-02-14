@@ -81,3 +81,15 @@ ntrain = (2*Tr+2*Gr+1)*(2*Td+2*Gd+1) - (2*Gr+1)*(2*Gd+1);
 This was achieved by making a zero-matrix of same size as the RDM, theb only add value'1' to cells which pass the threshold value and satisfy the margin-indexing
 
 This way, no noise was included throughout the process. 
+
+
+## Visualization of Results and Outputs
+
+* FFT
+![FFT](https://github.com/Mamdouh93Murad/SFND-Radar/blob/master/Graph/FFT.jpg)
+
+* FFT2 
+![FFT2](https://github.com/Mamdouh93Murad/SFND-Radar/blob/master/Graph/FFT2.jpg)
+
+* CFAR
+![CFAR](https://github.com/Mamdouh93Murad/SFND-Radar/blob/master/Graph/CA-CFAR.jpg)

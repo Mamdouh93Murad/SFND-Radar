@@ -85,11 +85,11 @@ This way, no noise was included throughout the process.
 
 ## Visualization of Results and Outputs
 
-* FFT
+#### FFT
 ![](https://github.com/Mamdouh93Murad/SFND-Radar/blob/master/Graph/FFT.jpg)
 
-* FFT2 
+#### FFT2
 ![](https://github.com/Mamdouh93Murad/SFND-Radar/blob/master/Graph/FFT2.jpg)
 
-* CFAR
+#### CFAR
 ![](https://github.com/Mamdouh93Murad/SFND-Radar/blob/master/Graph/CA-CFAR.jpg)

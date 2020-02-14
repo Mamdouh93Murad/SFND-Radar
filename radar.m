@@ -161,7 +161,7 @@ Gr = 5;
 Gd = 1;
 % *%TODO* :
 % offset the threshold by SNR value in dB
-offset = 20;
+offset = 8;
 % *%TODO* :
 %Create a vector to store noise_level for each iteration on training cells
 noise_level = zeros(1,1);
@@ -192,7 +192,10 @@ for R = Tr + Gr + 1 : Nr/2 - (Tr+Gr)
     for D = Td + Gd + 1 : Nd - (Td+Gd)
         range_start = R - Tr - Gr; range_end = R + Tr + Gr;
         doppler_start = D - Td - Gd; doppler_end = D + Td + Gd;
-        noise_level = db2pow(RDM(range_start : range_end,doppler_start : doppler_end));
+        guard = RDM(R - Gr : R + Gr, D - Gd : D + Gd);
+        cells = RDM(range_start : range_end,doppler_start : doppler_end);
+        training = setdiff(cells, guard);
+        noise_level = db2pow(training);
         average_noise = sum(noise_level) / ntrain;
         db = pow2db(average_noise);
         threshold = db + offset;
